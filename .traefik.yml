@@ -1,0 +1,10 @@
+displayName: Add response header
+summary: Plugin that copies request header value into a response header.
+type: middleware
+import: github.com/toanz/traefik-plugin-add-response-header
+testData:
+  from: X-Trace-Id
+  to: X-Trace-Id
+  overwrite: false
+  regexp: "^(.*)$"
+  replacement: "$1"
